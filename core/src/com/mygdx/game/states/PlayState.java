@@ -14,6 +14,8 @@ import com.mygdx.game.sprites.Tube;
 
 import java.util.Random;
 
+import us.monoid.json.JSONException;
+
 
 /**
  * Created by welser on 03.08.2015.
@@ -28,7 +30,7 @@ public class PlayState extends State {
     private Random rand;
     private Music sound;
     public static String highscore;
-    public static CharSequence str = "DAS IST UNMÖGLICH!";
+    public static CharSequence str = "DAS IST UNMOEGLICH!";
     CharSequence goal = "Ziel";
     private Texture ground;
     private Array<Tube> tubes;
@@ -65,7 +67,7 @@ public class PlayState extends State {
     }
 
     @Override
-    public void update(float dt) {
+    public void update(float dt) throws JSONException {
         handleImput();
         updateGround();
         bird.update(dt);

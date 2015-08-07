@@ -1,5 +1,7 @@
 package com.mygdx.game.sprites;
 
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Rectangle;
@@ -29,7 +31,7 @@ public class Bird {
         position = new Vector3(x,y,0);
         velocity = new Vector3(0,0,0);
         bird = new Texture("edbu.png");
-        Texture texture = new Texture("edanim.png");
+        Texture texture = new Texture("edt.png");
         birdAnimation = new Animation(new TextureRegion(texture), 3,0.5f);
 
         bounce = new Rectangle(x,y,texture.getWidth()/3, texture.getHeight());

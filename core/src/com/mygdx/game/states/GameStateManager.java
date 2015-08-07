@@ -4,6 +4,8 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 import java.util.Stack;
 
+import us.monoid.json.JSONException;
+
 /**
  * Created by welser on 03.08.2015.
  */
@@ -30,7 +32,7 @@ public class GameStateManager {
 
     }
 
-    public void update(float dt){
+    public void update(float dt) throws JSONException {
         states.peek().update(dt);
 
     }

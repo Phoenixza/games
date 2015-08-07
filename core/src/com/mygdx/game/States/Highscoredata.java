@@ -13,6 +13,7 @@ public class Highscoredata implements Json.Serializable {
 
     @Override
     public void write(Json json) {
+        //test
 
     }
 
